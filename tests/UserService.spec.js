@@ -29,6 +29,8 @@ describe('UserService', function () {
 
   });
 
-
+  it('should add names together correctly', function() {
+    expect(UserService.createFullName({first_name: 'Test', last_name: 'Test'})).toEqual('Test Test');
+  });
 
 });
